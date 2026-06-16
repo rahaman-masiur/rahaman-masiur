@@ -29,6 +29,9 @@ BCA Student · Swami Vivekananda University · West Bengal, India
 > **Lung Cancer Detection**  
 > Compared five ML classifiers (KNN, SVM, Decision Tree, Logistic Regression, Naive Bayes) on a Kaggle dataset of 309 records. Built with Python and scikit-learn.
 
+> **Book Recommendation System**  
+> Content-based filtering engine using NLP (Porter Stemmer), Bag-of-Words vectorization, and Cosine Similarity to recommend similar books based on description, category, and author data.
+
 ---
 
 ### Connect
