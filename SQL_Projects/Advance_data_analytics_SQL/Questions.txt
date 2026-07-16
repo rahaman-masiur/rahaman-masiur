@@ -1,0 +1,55 @@
+KEY ANALYSIS QUESTIONS
+======================
+A list of the core business questions this project sets out to answer, organized by analysis type.
+
+DATABASE SETUP & DATA CLEANING (table_and_dataset.sql)
+--------------------------------------------------------
+1. Are there any sales records that reference a customer that doesn't exist in the customer table?
+2. Are there any products with missing/blank category values that should be removed?
+3. What years of order data are present in the sales table, and can the table be partitioned by year for better performance?
+
+TREND ANALYSIS / CHANGE OVER TIME (Trend_analysis.sql)
+--------------------------------------------------------
+4. What are the total sales for each individual day?
+5. What are the total sales for each month (across all years)?
+6. What are total sales for each quarter of each year?
+7. What is the total yearly revenue?
+8. What is the total quantity of products sold each month?
+9. How many distinct customers placed an order each month? Each year?
+10. How many total orders were placed each quarter, and what is the running yearly order total?
+
+CUMULATIVE ANALYSIS (Cumulative_analysis.sql)
+--------------------------------------------------------
+11. What is the running (cumulative) total of sales over time, month by month?
+12. What is the moving average of product price over time?
+13. What is the cumulative total quantity sold over time, month by month?
+
+PERFORMANCE ANALYSIS (Performance_analysis.sql)
+--------------------------------------------------------
+14. How does each product's yearly revenue compare to its own average revenue (above/below average)?
+15. How does each product's yearly revenue compare to its previous year's revenue (year-over-year growth or decline)?
+16. How does each month's revenue compare to the average revenue for that year?
+17. How does each month's revenue compare to the previous month's revenue (month-over-month growth or decline)?
+18. What is the average order value for customers in each country?
+
+PART-TO-WHOLE ANALYSIS (Part_to_whole_analysis.sql)
+--------------------------------------------------------
+19. Which product categories contribute the most to overall revenue, and what is their percentage share?
+20. Which individual products contribute the most to overall revenue, and what is their percentage share?
+21. Which countries generate the most revenue, and what is their percentage share of total revenue?
+22. Which customer age groups contribute the most to total revenue, and what is their percentage share?
+
+DATA SEGMENTATION (Data_segmentation.sql)
+--------------------------------------------------------
+23. How many customers fall into each age group (≤20, 21–40, 41–60, 60+)?
+24. How many products fall into each cost range (below 500, 500–1000, 1000–1500, above 1500), and what is the average cost per range?
+25. How can customers be segmented into VIP, Regular, and New categories based on how long they've been ordering and how much they've spent?
+26. How many customers fall into each of the VIP / Regular / New segments?
+
+CUSTOMER REPORT (Report.sql)
+--------------------------------------------------------
+27. What does a consolidated view of each customer's order history look like (product, sales amount, quantity, age)?
+28. For each customer, what is their most recent order date, total amount spent, total quantity purchased, and total distinct products purchased?
+29. What is each customer's order lifespan (in months) and average monthly spending?
+30. What is each customer's average order value?
+31. Who are the top customers when ranked by total spending?
